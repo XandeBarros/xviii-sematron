@@ -5,3 +5,7 @@ node_modules/
 # Variáveis de Ambiente
 
 .env
+
+# Build Folder
+
+public/

@@ -34,7 +34,7 @@ section {
   justify-content: space-between;
   align-items: center;
 
-  background-image: url('../img/Background-Plain.png');
+  background-image: url('../img/background.png');
 }
 
 .titulo-secoes {
@@ -193,49 +193,17 @@ header nav a:hover {
   display: inline-block;
 }
 
-.redes-sociais li a img {
+.redes-sociais li a span {
+  color: var(--letra)
+}
+
+.redes-sociais li a span i {
   width: 2rem;
   transition: .5s;
 }
 
-.redes-sociais li a img:hover {
+.redes-sociais li a i:hover {
   transform: translateY(-0.5rem);
-}
-
-.circle {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  
-  background: var(--chocolate);
-
-  clip-path: circle(37.5rem at right 50rem);
-}
-
-.circle2 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  
-  background: var(--chocolate);
-
-  clip-path: circle(28rem at left 120rem);
-}
-
-.circle3 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  
-  background: var(--chocolate);
-
-  clip-path: circle(35rem at right 320rem);
 }
 
 #sematron, #atracoes, #apoio, #contato, #beneficios {
@@ -246,28 +214,33 @@ header nav a:hover {
   position: relative;
   margin: 3.5rem 0;
 
-  width: 100%;
-  min-height: 50rem;
+  width: 200%;
+  min-height: 25rem;
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-around;
-  gap: 2rem;
+  flex-wrap: nowrap;
+  gap: 2rem; 
 }
 
+
 .events .events__divs {
-  width: 25rem;
-  height: 40rem;
+  width: 12.5rem;
+  height: 15rem;
 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
   
-  background: var(--cards);
   padding: 2rem;
-  border-radius: 1rem;
   transition: .5s;
+
+  background: rgba(255, 255, 255, 0.16);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.9px);
+  -webkit-backdrop-filter: blur(4.9px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .events .events__divs div {
@@ -282,7 +255,7 @@ header nav a:hover {
 }
 
 .events .events__divs h2 {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   font-family: 'Roboto';
   font-weight: bold;
   color: var(--letra);
@@ -299,7 +272,7 @@ header nav a:hover {
 }
 
 .events .events__divs img {
-  width: 10rem;
+  width: 5rem;
 }
 
 .beneficios-desc {
@@ -312,10 +285,15 @@ header nav a:hover {
 .beneficios-desc div {
   width: 50%;
 
-  background: var(--cards);
   padding: 2rem;
-  border-radius: 1rem;
   transition: .5s;
+
+  background: rgba(255, 255, 255, 0.16);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.9px);
+  -webkit-backdrop-filter: blur(4.9px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .beneficios-desc div:hover {
