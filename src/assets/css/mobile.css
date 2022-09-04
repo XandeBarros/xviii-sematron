@@ -1,0 +1,245 @@
+
+/* Mobile */
+
+@media screen and (max-width: 768px) {
+  .btn__cta:hover, header nav a:hover, .content .img__box img:hover, .redes-sociais li a img:hover, .events .events__divs:hover, .beneficios-desc div:hover, .c-palestra .card:hover, .contato-form .input-box input[type="submit"] {
+    transform: translateY(0);
+  }
+
+  section {
+    width: 100vw;
+    padding: 1rem;
+  }
+
+  header {
+    position: absolute;
+    padding: 1rem 1rem 0 1rem;
+    height: 10rem;
+    flex-direction: column;
+  }
+
+  header nav {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 10rem;
+    justify-content: space-around;
+    padding-top: .5rem;
+  }
+
+  header nav a {
+    height: 1.5rem;
+    margin-left: 0;
+  }
+
+  .content {
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 10rem;
+    height: 60rem;
+  }
+
+  .content .text__box h1 {
+    font-size: 3.5rem;
+  }
+
+  .content .text__box {
+    width: 100%;
+  }
+
+  .content .text__box p {
+    margin: 3rem 0;
+    font-weight: 500;
+  }
+
+  .btn__cta {
+    font-size: 2rem;
+  }
+
+  .content .img__box {
+    margin-top: 0;
+    width: 100%;
+  }
+
+  .logo {
+    margin: auto auto;
+    width: 15rem;
+  }
+
+  .redes-sociais {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    height: 6rem;
+  }
+
+  .events {
+    width: 100%;
+    height: 50rem;
+    display: flex;
+    align-items: center;
+    overflow: visible;
+    overflow-x: auto;
+  }
+
+  .slider-events-mobile {
+    flex-wrap: nowrap;
+    min-height: 0;
+    width: 600%; /*100% + slides * 100%*/
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+  }
+
+  .events .events__divs {
+    width: calc(100vw - 5rem);
+    padding: 1rem;
+  }
+
+  .beneficios-desc div {
+    width: 100%;
+  }
+
+  .circle {
+    clip-path: circle(20rem at right 7.5rem);
+  }
+
+  .circle2 {
+    clip-path: circle(13rem at left 80rem);
+  }
+
+  .circle3 {
+    clip-path: circle(18rem at right 350rem);
+  }
+
+  /* Cards do Slider */
+
+  .c-palestra {
+    flex-wrap: nowrap;
+  }
+
+  .c-palestra .card:not(:last-child) {
+    margin-right: 1rem;
+  }
+
+  .c-palestra .card:hover {
+    transform: translateY(0);
+  }
+
+  /* Slider Mobile */
+
+  .slider {
+    height: auto;
+    overflow: visible;
+    overflow-x: auto;
+  }
+
+  .slides {
+    flex-direction: row;
+    height: auto;
+  }
+
+  .slide {
+    width: auto;
+    height: auto;
+    padding: 1.5rem;
+  }
+
+  .navigation-manual, .navigation-automatic {
+    display: none;
+  }
+
+  #radio1:checked ~ .first {
+    margin-left: 0;
+  }
+  
+  #radio2:checked ~ .first {
+    margin-left: calc(-833% / 6);
+  }
+  
+  #radio3:checked ~ .first {
+    margin-left: calc(-1260% / 6);
+  }
+  
+  #radio4:checked ~ .first {
+    margin-left: calc(-1600% / 6);
+  }
+  
+  #radio5:checked ~ .first {
+    margin-left: calc(-1943% / 6);
+  }
+
+  footer {
+    width: 100%;
+  }
+
+  footer .parceiros {
+    /* flex-direction: column; */
+    gap: .5rem;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  footer .parceiros > img:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+
+  footer img {
+    width: 35%;
+    height: auto;
+  }
+
+  footer .patrocinios {
+    flex-direction: column;
+  }
+  
+
+  footer .patrocinios > img {
+    width: 70%;
+    height: auto;
+  }
+
+  footer .parceiros > img {
+    width: 25%;
+    height: auto;
+  }
+
+  footer .patrocinios > img:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .contato {
+    margin-top: 2rem;
+    padding: .5rem;
+  }
+
+  .container .contato-info {
+    width: 100%;
+    height: 60vh;
+  }
+
+  .container .contato-info .box {
+    height: 20vh;
+    align-items: center;
+  }
+
+  .container .contato-info .box .icon {
+    height: 5vh;
+    width: 5vh;
+  }
+
+  .container .contato-info .box .text {
+    margin-left: 1rem;
+  }
+
+  .contato-form {
+    width: 100%;
+    padding: 1.5rem;
+  }
+}
