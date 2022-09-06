@@ -1,5 +1,6 @@
 import './assets/css/reset.css';
 import './assets/css/style.css';
+import './assets/css/star.css';
 import './assets/css/slider.css';
 import './assets/css/mobile.css';
 import './assets/css/webkit.css';
@@ -7,7 +8,7 @@ import './assets/css/webkit.css';
 const swal = require('sweetalert');
 const emailjs = require('emailjs-com');
 
-emailjs.init(process.env.USER);
+emailjs.init(user_dPup4hUzCgRmyFRB2PjF5);
 
 const success = () => {
   swal({
@@ -55,7 +56,7 @@ if (window.screen.width > 992) {
     console.log(name, email, message);
     e.preventDefault();
 
-    emailjs.send(process.env.SERVICE, process.env.TEMPLATE,{
+    emailjs.send(service_yhprk5s, template_1nr8dk4,{
       from_name: name.value,
       to_name: email.value,
       message: message.value,

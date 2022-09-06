@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build:development": "webpack --mode development --config webpack.development.js",
-    "build:production": "webpack --mode production --config webpack.production.js"
+    "build:dev": "webpack --mode development --config webpack.development.js",
+    "build prod": "webpack --mode production --config webpack.production.js"
   },
   "repository": "git@github.com:XandeBarros/landing-page-sematron.git",
   "author": "Xande Barros <barrosalex6@gmail.com>",
